@@ -1,3 +1,5 @@
+//Not intended to be ran or compiled. This is just a showcase of the go-dbc module.
+
 package main
 
 import (
