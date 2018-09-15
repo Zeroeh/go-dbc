@@ -66,7 +66,7 @@ func (c *CaptchaClient)Decode(timeout uint8) (int, error) {
 	return actualResponse.CaptchaID, nil
 }
 
-//ParamToString turns variables into hardcoded json string. DBC hires cheap coders, gets cheap programs...
+//ParamToString turns variables into hardcoded json string. DBC hires cheap coders, gets cheap programs... and it's a pain to accomodate
 func (c *CaptchaClient)ParamToString() {
 	if c.Proxy != "" {
 		c.JSONString = `{ "proxy": "`+c.Proxy+`", "proxytype": "`+c.ProxyType+`", "googlekey": "`+c.SiteKey+`", "pageurl": "`+c.SiteURL+`" }`
@@ -141,7 +141,7 @@ type CaptchaStatus struct {
 	Text string
 }
 
-//CaptchaStatusReal is the actual json response when uploading captchas because their service is coded by 3rd worlders
+//CaptchaStatusReal is the actual json response when uploading captchas
 type CaptchaStatusReal struct {
 	Status int `json:"status"`
 	CaptchaID int `json:"captcha"`
