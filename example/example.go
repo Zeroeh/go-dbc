@@ -1,4 +1,4 @@
-//Not intended to be ran or compiled. This is just a showcase of the go-dbc module.
+//Not intended to be ran or compiled. This is just a showcase of the go-dbc module. This example is for recaptcha v2
 
 package main
 
